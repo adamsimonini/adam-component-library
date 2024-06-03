@@ -1,6 +1,5 @@
 {
   "name": "react-vite-library",
-  "private": false,
   "version": "0.0.3",
   "type": "module",
   "scripts": {
