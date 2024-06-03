@@ -1,7 +1,10 @@
 {
-  "name": "react-vite-library",
+  "name": "adam-component-library",
   "version": "0.0.3",
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -67,13 +70,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigyanpoudel/react-vite-library"
+    "url": "https://github.com/adamsimonini/react-vite-library"
   },
   "keywords": [],
-  "author": "bigyan poudel",
+  "author": "adam simonini",
   "bugs": {
-    "url": "https://github.com/bigyanpoudel/react-vite-library/issues"
+    "url": "https://github.com/adamsimonini/adam-component-library/issues"
   },
-  "homepage": "https://github.com/bigyanpoudel/react-vite-library#readme",
+  "homepage": "https://github.com/adamsimonini/adam-component-library#readme",
   "license": "MIT"
 }
