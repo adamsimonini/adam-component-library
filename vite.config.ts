@@ -19,12 +19,12 @@ export default defineConfig((configEnv) => ({
     linterPlugin({
       include: ['./src/**/*.{ts,tsx}'],
       linters: [new EsLinter({ configEnv })],
-    })
+    }),
   ],
   build: {
     lib: {
       entry: path.join('src', 'component/index.ts'),
-      
+
       name: 'ReactViteLibrary',
       formats: ['es', 'umd'],
       fileName: (format) => `react-vite-library.${format}.js`,
@@ -33,10 +33,10 @@ export default defineConfig((configEnv) => ({
       external: [...Object.keys(packageJson.peerDependencies)],
       output: {
         globals: {
-            react: 'React',
-            'react-dom': 'ReactDOM',
+          react: 'React',
+          'react-dom': 'ReactDOM',
         },
-    },
+      },
     },
   },
 }))
